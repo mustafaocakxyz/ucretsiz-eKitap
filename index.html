@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayallerini Erteleme</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+            background-image: url("arkaplan.png");
+            height: 100vh;
+            text-align: center;
+            color: white;
+
+        }
+
+        h2 {
+            font-size: 40px;
+            margin-bottom: 0px;
+        }
+
+        h3 {
+            font-size: 26px;
+            margin-top: 0px;
+            margin-bottom: 4px;
+            text-align: left;
+        }
+
+        .container {
+            padding-top: 80px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .container img {
+            width: 300px;
+            height: 400px;
+            border-radius: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding-block: 50px;
+            height: min-content;
+            gap: 30px;
+            transition: all .3s;
+        }
+
+        .links a {
+            transition: all .3s;
+        }
+
+        .links a:hover {
+            scale: 1.05;
+            color: #5FB3F9;
+        }
+
+        @media (max-width: 410px) {
+            .container img {
+                width: 250px;
+                height: 350px;
+            }
+
+            h3 {
+                font-size: 22px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+        }
+
+        .description {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .btn {
+            transition: all 0.3s ease-in-out;
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid white;
+            background-color: transparent;
+            font-size: 26px;
+            font-weight: 600;
+            color: white;
+            width: fit-content;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            border: 1px solid #FBDF6F;
+            transform: translateY(6px);
+            background-color: #5FB3F9;
+            box-shadow: 3px 3px 10px 15px rgb(95, 179, 249, .1);
+        }
+
+        .btn:hover .link {
+            color: black;
+        }
+
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2 style="color: white;">Hayallerini erteleme.</h2>
+    <h2 style="color: #5FB3F9;margin-top: 0px;">Bugün başla.</h2>
+    <div class="container">
+        <img src="Adsız tasarım (6).png" alt="Adsız tasarım (6).png">
+        <div class="description">
+            <h3>YouTube'dan (X Akademi)</h3>
+            <h3 style="color: #FBDF6F;">4 ayda +135.000₺</h3>
+            <h3>kazanma hikayemi</h3>
+            <h3 style="color: #5FB3F9;">gerçek analiz ve kanıtlarıyla</h3>
+            <h3>öğren. Tamamen ücretsiz.</h3>
+            <button class="btn"><a style="font-weight: 300;" class="link"
+                    href="https://drive.google.com/file/d/1JFm4SvxSbLgyph35Ew0fMz1NIJishGZ4/view?usp=drivesdk">
+                    PDF İndir
+                </a></button>
+        </div>
+    </div>
+    <div class="links">
+        <a class="icon" href="https://www.instagram.com/mustafaocak.xyz/">
+            <img width="40" height="40" src="instagram-new-2022-seeklogo.svg" alt="social-media">
+            @mustafaocak.xyz</a>
+        <a class="icon" href="https://x.com/mustafaocakxyz">
+            <img width="40" height="40" src="twitter.png" alt="social-media">
+
+            @mustafaocakxyz</a>
+        <a class="icon" href="https://youtube.com/@mustafaocakxyz?si=Kyy26C6KDEAZDQ37">
+            <img width="40" height="40" src="youtube-2017-icon-seeklogo-3.svg" alt="social-media">
+
+            @mustafaocakxyz</a>
+        <a class="icon" href="mustafaocak.xyz">
+            <img width="40" height="40" src="web-svgrepo-com (1).svg" alt="social-media">
+
+            @mustafaocak.xyz</a>
+    </div>
+
+</body>
+
+</html>
