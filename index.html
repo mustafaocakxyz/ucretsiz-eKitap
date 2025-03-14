@@ -2,50 +2,34 @@
 <html lang="tr">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3R81DHTCZD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-3R81DHTCZD');
-</script>
-    <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "ql5d90ygki");
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ücretsiz e-Kitap</title>
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/10433/10433049.png">
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
         body {
             font-family: "Poppins", sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
             text-align: center;
             background-image: url("arkaplan.png");
             height: 100vh;
-            text-align: center;
             color: white;
-
         }
 
         h2 {
             font-size: 40px;
-            margin-bottom: 0px;
         }
 
         h3 {
             font-size: 26px;
-            margin-top: 0px;
             margin-bottom: 4px;
             text-align: left;
         }
@@ -63,6 +47,7 @@
             width: 300px;
             height: 400px;
             border-radius: 20px;
+            loading: lazy;
         }
 
         a {
@@ -76,17 +61,16 @@
             align-items: center;
             justify-content: center;
             padding-block: 50px;
-            height: min-content;
             gap: 30px;
             transition: all .3s;
         }
 
         .links a {
-            transition: all .3s;
+            transition: transform .3s ease-in-out, color .3s;
         }
 
         .links a:hover {
-            scale: 1.05;
+            transform: scale(1.05);
             color: #5FB3F9;
         }
 
@@ -102,18 +86,11 @@
 
             .links {
                 padding-right: 20px;
-            } 
+            }
 
             .container {
                 padding: 20px;
             }
-
-        }
-
-        .description {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
         }
 
         .btn {
@@ -125,67 +102,85 @@
             font-size: 26px;
             font-weight: 600;
             color: white;
-            width: fit-content;
             cursor: pointer;
         }
 
         .btn:hover {
-            border: 1px solid #FBDF6F;
+            border-color: #FBDF6F;
             transform: translateY(6px);
             background-color: #5FB3F9;
-            box-shadow: 3px 3px 10px 15px rgb(95, 179, 249, .1);
+            box-shadow: 3px 3px 10px 15px rgba(95, 179, 249, 0.1);
         }
 
         .btn:hover .link {
             color: black;
         }
 
-
         .icon {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 10px;
-
         }
     </style>
-
 </head>
 
 <body>
-    <h2 style="color: white;">Hayallerini erteleme.</h2>
+    <h2>Hayallerini erteleme.</h2>
     <h2 style="color: #5FB3F9;margin-top: 0px;">Bugün başla.</h2>
+
     <div class="container">
-        <img src="kapak123.png" alt="Adsız tasarım (6).png">
+        <img src="kapak123.png" alt="e-Kitap Kapak">
         <div class="description">
             <h3>YouTube kanalımdan</h3>
             <h3 style="color: #FBDF6F;">4 ayda +135.000₺</h3>
             <h3>kazanma hikayemi</h3>
             <h3 style="color: #5FB3F9;">gerçek analiz ve kanıtlarıyla</h3>
             <h3>öğren. Tamamen ücretsiz.</h3>
-            <button class="btn"><a style="font-weight: 300;" class="link"
+            <button class="btn">
+                <a style="font-weight: 300;" class="link"
                     href="https://drive.google.com/file/d/1DyEECNl7qtJic745rg9_DOO3wE4ENgLv/view?usp=sharing">
                     PDF İndir (174 indirme)
-                </a></button>
+                </a>
+            </button>
         </div>
     </div>
+
     <div class="links">
         <a class="icon" href="https://www.instagram.com/mustafaocak.xyz/">
-            <img width="40" height="40" src="instagram-new-2022-seeklogo.svg" alt="social-media">
-            @mustafaocak.xyz</a>
+            <img width="40" height="40" src="instagram-new-2022-seeklogo.svg" alt="Instagram">
+            @mustafaocak.xyz
+        </a>
         <a class="icon" href="https://x.com/mustafaocakxyz">
-            <img width="40" height="40" src="twitter.png" alt="social-media">
-
-            @mustafaocakxyz</a>
+            <img width="40" height="40" src="twitter.png" alt="Twitter">
+            @mustafaocakxyz
+        </a>
         <a class="icon" href="https://youtube.com/@mustafaocakxyz?si=Kyy26C6KDEAZDQ37">
-            <img width="40" height="40" src="youtube-2017-icon-seeklogo-3.svg" alt="social-media">
-
-            @mustafaocakxyz</a>
+            <img width="40" height="40" src="youtube-2017-icon-seeklogo-3.svg" alt="YouTube">
+            @mustafaocakxyz
+        </a>
         <a class="icon" href="mustafaocak.xyz">
-            <img width="40" height="40" src="web-svgrepo-com (1).svg" alt="social-media">
-
-            @mustafaocak.xyz</a>
+            <img width="40" height="40" src="web-svgrepo-com (1).svg" alt="Web">
+            @mustafaocak.xyz
+        </a>
     </div>
+
+    <!-- Google Analytics & Clarity scripts moved to the bottom to avoid render-blocking -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3R81DHTCZD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-3R81DHTCZD');
+    </script>
+
+    <script>
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "ql5d90ygki");
+    </script>
 
 </body>
 
